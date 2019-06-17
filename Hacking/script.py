@@ -9,16 +9,13 @@ import numpy as np
 import subprocess as sp
 import unicodedata
 import argparse
+import signal
+
 from termcolor import colored
 
 
 
 
-# to prevetn ctrl + c  ctrl + z
-import signal
-
-signal.signal(signal.SIGINT, signal.SIG_IGN)
-signal.signal(signal.SIGTSTP, signal.SIG_IGN)
 
 
 def strip_accents(s):
@@ -280,7 +277,7 @@ def lookForCulprit(culprit, teamNames, teamMembers, chiefs) :
     # for the hacking by looking at the schedule of personns on site
     # and to the recent activity of every team members
 
-    install_dir = os.environ['EG_DIR']
+    #install_dir = os.environ['EG_DIR']
 
     
     # definning interval of time for the hacking
@@ -509,7 +506,7 @@ def read_list_of_files(index=None) :
 
     # if index is none, returns total number of line in the file
     # else returns only the i-th line
-    install_dir = os.environ['EG_DIR']
+    #install_dir = os.environ['EG_DIR']
     
     fname=install_dir+'Files_search/list_of_possible_files.txt'
     with open(fname, 'r') as myFile :
@@ -545,7 +542,7 @@ def read_list_of_files(index=None) :
 def makeListFiles(badFileName='reallyBadFile.sh',badFileSize='734Mo',\
                   numberFiles=10) :
 
-    install_dir = os.environ['EG_DIR']
+    #install_dir = os.environ['EG_DIR']
     
     # making bad file line
     badFileLine = ['drwxrwxrwx','1','soumaya','staff', badFileSize, badFileName]
@@ -600,7 +597,7 @@ def makeListFiles(badFileName='reallyBadFile.sh',badFileSize='734Mo',\
 def searchForBadFile(culprit) :
 
     
-    install_dir = os.environ['EG_DIR']
+    #install_dir = os.environ['EG_DIR']
 
     # randomly select files from a list of possibilities and write a new file
     # listing all files on the "culprit account".
@@ -815,6 +812,17 @@ parser.add_argument('--test','-t',action='store_true',default=False, \
                     help='Use simpler inputs for the login and mdp')
 args = parser.parse_args()
 
+
+
+global install_dir    # to refer to main directory of the Hacking part
+install_dir = './'     # useful to have absolute path designation
+
+
+
+# to prevent ctrl + c  ctrl + z
+if not args.test : 
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    signal.signal(signal.SIGTSTP, signal.SIG_IGN)
 
 
 
