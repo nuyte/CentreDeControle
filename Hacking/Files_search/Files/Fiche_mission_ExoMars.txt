@@ -1,0 +1,4 @@
+Fiche Mission
+Programme Rover ExoMars
+ 
+Le Rover ExoMars est un projet de rover de l'Agence spatiale européenne (ESA) qui a pour mission de principale de rechercher de possible traces de vie sur la planète rouge. Le rover fut lancé en 2020 par une fusée russe Proton fournie par l'agence spatiale russe Roscosmos.

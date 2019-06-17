@@ -1,0 +1,4 @@
+Fiche Mission
+Programme James-Webb
+ 
+Le télescope spatial James-Webb est un télescope spatial développé par la NASA avec le concours de l'Agence spatiale européenne (ESA) et de l'Agence spatiale canadienne (ASC). Il fut lancé vers mars 2021. Ses instruments seront utilisés, entre autres, pour observer les premières étoiles et galaxies formées après le Big Bang. Les observations de ce télescope pourront être de l'orange du spectre visible à l'infrarouge moyen, de 0,6 à 28 micromètres. Il surpasse ainsi, le télescope spatial Hubble pour l'observation dans l'infrarouge mais, contrairement à celui-ci, ne pourra observer le spectre lumineux dans l'ultraviolet et en lumière visible

@@ -1,0 +1,33 @@
+
+export PATH="/usr/local/Cellar/:${PATH}"
+export PATH="/usr/local/bin:/usr/local/sbin:${PATH}"
+export PATH="$HOME/bin:$PATH"
+export PATH="/Users/sf/anaconda3/bin:$PATH"
+
+export PYTHONPATH="/users/sf/Documents/Python_Modules/:$PYTHONPATH"
+
+alias ls='ls -h -G'
+alias ll='ls -l -G'
+alias cp='cp -v'
+alias mv='mv -v'
+alias rm='rm -v'
+alias j='jobs'
+alias z='zlock -immed'
+alias p='pbpaste'
+alias c='pbcopy'
+
+bindkey -e # emacs binds
+bindkey "\e[3~" delete-char # delete
+
+# {alt,ESC}-BS to delete last part from directory name
+slash-backward-kill-word() {
+        local WORDCHARS="${WORDCHARS:s@/@}"
+        zle backward-kill-word
+/;}
+zle -N slash-backward-kill-word
+bindkey '\e^?' slash-backward-kill-word
+
+# {alt,ESC}-e to edit command-line in editor
+autoload edit-command-line
+zle -N edit-command-line
+bindkey '\ee' edit-command-line

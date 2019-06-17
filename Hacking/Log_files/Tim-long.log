@@ -1,0 +1,24 @@
+PID        Nom de tache       %CPU         %MEM		 Heure         Commande              Description
+
+24567      Outlook Mail       12	   257M	         09:15.55      Mails                Ouverture et lecture des mails
+46387      Google Chrome      24	   300M	         09:27.33      Google Chrome        Ouverture Google Chrome
+46382      Google Chrome      22	   257M	         09:27.42      Google Chrome        Ouverture Google Chrome
+45678      Emacs              37           025M          09:30.11      Emacs  		    Editeur de code
+34521	   Python             98           235M          09:33.11      simu_iss.py	    Code de simulation ISS Python
+34522	   Python             99           235M          09:33.12      simu_iss.py	    Code de simulation ISS Python
+34523	   Python             97           235M          09:33.20      simu_iss.py	    Code de simulation ISS Python
+34524	   Python             98           235M          09:37.05      simu_iss.py	    Code de simulation ISS Python
+34525	   Python             97           235M          09:50.28      simu_iss.py	    Code de simulation ISS Python
+34526	   Python             95           235M          09:50.29      simu_iss.py	    Code de simulation ISS Python
+773        Dropbox            45            23M          10:01.55      sync		    Synchronisation des fichiers dropbox
+89567	   Word		      12	    13M	      	 10:03:27      word		    Editeur de texte Word		   
+89789	   Power Point	      54	   134M	      	 10:03:45      pptx		    Logiciel de presentation et diaporama
+34891      Emacs              22           025M          10:15.58      Emacs  		    Editeur de code
+98763      Emacs              55           034M          10:16.02      Emacs  		    Editeur de code
+87543      Emacs              62           113M          10:26.45      Emacs  		    Editeur de code
+67981	   Python	      100	    34M		 10:27.21      test.py              Code Python
+12435	   Copies 	      98	    55M		 10:30.11      cp 		    copies de fichier
+12456	   Copies 	      99	    61M		 10:31.02      cp 		    copies de fichier
+12123	   Copies 	      95	    12M		 10:31.32      cp 		    copies de fichier
+12893	   Copies 	      92	     2M		 10:31.43      cp 		    copies de fichier
+67935	   Preferences 	      32	     17		 10:32.51      sys_pref		    Preferences et Options de l'ordinateur
