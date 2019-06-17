@@ -2,6 +2,7 @@ import os
 import sys
 import pdb
 import time
+import time
 import random as rand
 import datetime
 import shutil as sh
@@ -723,76 +724,6 @@ def searchForBadFile(culprit) :
     
     return None
 
-def atmospheric_entry(good_angles) :
-
-    # asking coordinate for the atmospheric re-entry :
-
-    
-    sp.call(['clear'])
-    message = "Ce programme a pour but d'établir les trajectoires du Soyouz "+\
-              "pour rentrer sur Terre en sécurité.\n\n"
-           
-    slowprint(message,'red')
-    
-    questions = ["Angle d'entrée de Soyouz dans l'atmosphere (a1):",\
-                 'Angle de descente du Soyouz vers la Terre (a2):']
-    
-    ok_angles = False
-
-
-    while not ok_angles :
-
-        try :
-            angle1 = input(questions[0]).lower()
-            angle1 = float(angle1)  
-        except ValueError  :
-            slowprint('Veuillez entrer un nombre','red')
-            time.sleep(1)
-
-            sp.call(['clear'])
-            print(colored(message,'red'))
-            
-            continue
-
-        try : 
-            angle2 = input(questions[1]).lower()
-            angle2 = float(angle2)
-        except ValueError :
-            slowprint('Veuillez entrer un nombre','red')
-            time.sleep(1)
-
-            sp.call(['clear'])
-            print(colored(message,'red'))
-
-            continue
-
-        slowprint('\n Simulation en cours:')
-        displayLoadingBar(duration=3)
-        
-        if angle1 == good_angles[0] and angle2 == good_angles[1] :
-            ok_angles = True
-            success_message = 'Trajectoire correcte, entrée atmospherique OK\n' 
-            slowprint(success_message,'green')
-            slowprint('Envoi des informations de vol vers le Soyouz:')
-            displayLoadingBar(duration=7)
-            slowprint('Transfert terminé, paré au décollage.')
-
-            # to quit the script at the end
-            # Merci au beau Babak pour cette excellente idée !!
-            res = input()
-            while format_string(res) != format_string('quit script hacking') :
-                res = input()
-                
-
-        else :
-            ok_angles = False
-            error_message = "Paramètres incorrects, désintégration dans l'atmosphère"
-            slowprint(error_message, 'red')
-            time.sleep(1)        
-
-            sp.call(['clear'])
-            print(colored(message,'red'))
-
 
 
             
@@ -877,12 +808,5 @@ if args.section == 0 or args.section == 3 :
     searchForBadFile(culprit)
 
 
-    
-# -- Fourth part :
-good_angles = [40.,3.]
 
-if args.section == 0 or args.section == 4 : 
-    atmospheric_entry(good_angles)
-    
-            
 
