@@ -198,7 +198,7 @@ if not args.test :
 # locked by password
 
 mdp     = 4594 # NGC code of sombrero galaxy, cf galaxy poster in the room
-message = "Ordinateur bloqué à la suite d'une attaque. \n"+\
+message = "La tentative de hacking du centre de contrôle a bloqué cet ordinateur.\n"+\
           "Veuillez entrer le mot de passe (4  chiffres) pour démarer la "+\
           "réinitialisation: "
 res     = "0"

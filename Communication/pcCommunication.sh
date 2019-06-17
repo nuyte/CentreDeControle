@@ -9,7 +9,7 @@
 ###############################################################################
 
 #Variables d'environnement
-motDePasse="ciel"
+motDePasse="4954"
 adrIPSrv="192.168.1.21"
 portSrv="9999"
 
@@ -67,7 +67,7 @@ echo "                               PC de communication"
 echo "==============================================================================="
 echo ""
 printf "\033[33mLa tentative de hacking du centre de contrôle a bloqué le canal de communication avec l'ISS.\033[0m\n"
-echo "Veuillez indiquer le code à 4 lettres afin de déverouiller le canal"
+echo "Veuillez entrer le mot de passe (4 chiffres) afin de déverouiller le canal"
 echo ""
 
 M2P=0
