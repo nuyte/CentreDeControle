@@ -808,5 +808,7 @@ if args.section == 0 or args.section == 3 :
     searchForBadFile(culprit)
 
 
-
-
+    
+res = input()
+while format_string(res) != format_string('quit script') :
+    res = input()

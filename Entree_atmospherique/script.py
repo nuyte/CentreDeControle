@@ -155,7 +155,7 @@ def atmospheric_entry(good_angles) :
             # to quit the script at the end
             # Merci au beau Babak pour cette excellente idée !!
             res = input()
-            while format_string(res) != format_string('quit script hacking') :
+            while format_string(res) != format_string('quit script') :
                 res = input()
                 
 
