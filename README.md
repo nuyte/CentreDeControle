@@ -2,6 +2,14 @@ README pour les différents scripts de la partie centre de controle pour l'Escap
 
 
 
+
+pour aller dans le bon dossier une fois le Raspberry allumé :
+ - cd ~/Documents/Centre_de_controle/
+
+
+Pour mettre à jour :
+ - git pull
+
 Chacune des 4 parties fonctionne indépendamment des autres.
 
 Commande pour éxéxuter chacune des 4 parties :

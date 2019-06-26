@@ -1,0 +1,9 @@
+# -- Hacking :
+
+1 - changer le nom du mavuas fichier pour un truc en français
+2 - mettre la date en jour / mois / annee
+3 - faire deux niveaux de difficulte et enlever les questions inutiles
+4 - mettre indice pour mot de passe NGC pour debloquer ordi Rentrée et et Comm
+
+
+# -- rentree : 
