@@ -4,7 +4,7 @@ README pour les différents scripts de la partie centre de controle pour l'Escap
 
 
 pour aller dans le bon dossier une fois le Raspberry allumé :
- - cd ~/Documents/Centre_de_controle/
+ - cd ~/Documents/CentreDeControle/
 
 
 Pour mettre à jour :
