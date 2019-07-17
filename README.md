@@ -15,7 +15,7 @@ Chacune des 4 parties fonctionne indépendamment des autres.
 Commande pour éxéxuter chacune des 4 parties :
 - ./hacking.sh
 - ./rentree.sh
-- 
+- ./docking.sh (ne marche que si un joystick est branché)
 -
 
 

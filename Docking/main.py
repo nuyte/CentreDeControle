@@ -1,7 +1,7 @@
 import arcade
 from game.game import Game
 
-FULLSCREEN = False
+FULLSCREEN = True
 DEBUG_MODE = False
 SCALE_SPEED = 0.0005
 INIT_DELTA_TIME = 5
