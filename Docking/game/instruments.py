@@ -67,6 +67,6 @@ class Instruments:
                              arcade.color.RED, 50, align='center',
                              anchor_x='center', anchor_y='center', rotation=0)
         if is_dock:
-            arcade.draw_text("AMARRAGE REUSSI", self.window.width/2, self.window.height / 2,
+            arcade.draw_text("AMARRAGE REUSSI", self.window.width/2, 3 * self.window.height / 4,
                              arcade.color.GREEN, 50, align='center',
                              anchor_x='center', anchor_y='center', rotation=0)
