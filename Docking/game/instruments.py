@@ -16,7 +16,7 @@ class Instruments:
         self.docking_system = docking_system
         self.window = docking_system.window
         self.atv = docking_system.atv
-        self.color = (204, 85, 0)
+        self.color = (0, 249, 0)
 
     def setup(self):
         self.draw_visor()
