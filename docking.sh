@@ -2,6 +2,6 @@
 
 cd Docking/
 
-python3 main.py 
+python3.6 main.py 
 
 cd ../

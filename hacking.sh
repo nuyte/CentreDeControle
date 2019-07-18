@@ -2,6 +2,6 @@
 
 cd Hacking/
 
-python3 script.py
+python3.6 script.py
 
 cd ../
