@@ -3,6 +3,7 @@ from .atv import ATV
 from .docking_system import DockingSystem
 from .instruments import Instruments
 import timeit
+import pdb
 
 DELTA_SPEED = 0.02
 INIT_SCALE = 0.05
@@ -10,12 +11,11 @@ INIT_SCALE = 0.05
 MOVEMENT_MULTIPLIER = 0.0005
 DEAD_ZONE = 0.05
 
-
 class Game(arcade.Window):
     """ Main application class. """
 
     def __init__(self, width: float = 800, height: float = 600, title: str = 'Arcade Window', fullscreen: bool = False,
-                 resizable: bool = False, debug_mode=False, scale_speed=0.001, init_delta_time=10):
+                 resizable: bool = False, debug_mode=False, use_keyboard: bool = False, scale_speed=0.001,init_delta_time=10):
         super().__init__(width, height, title, fullscreen, resizable)
         arcade.set_background_color(arcade.color.BLACK)
         self.scale_speed = scale_speed
@@ -26,6 +26,7 @@ class Game(arcade.Window):
         self.debug = debug_mode
         self.time = timeit.default_timer()
         self.fps = None
+        self.ukeyboard = use_keyboard
 
         joysticks = arcade.get_joysticks()
         if joysticks:
@@ -84,14 +85,17 @@ class Game(arcade.Window):
                 self.atv.acc_y = - self.joystick.y * MOVEMENT_MULTIPLIER
 
     def on_key_press(self, key, modifiers):
-        # if key == arcade.key.UP:
-        #     self.atv.acc_y = DELTA_SPEED
-        # elif key == arcade.key.DOWN:
-        #     self.atv.acc_y = - DELTA_SPEED
-        # elif key == arcade.key.LEFT:
-        #     self.atv.acc_x = - DELTA_SPEED
-        # elif key == arcade.key.RIGHT:
-        #     self.atv.acc_x = DELTA_SPEED
-        # elif key == arcade.key.F:
-        #     self.set_fullscreen(not self.fullscreen)
-        pass
+
+        if self.ukeyboard : 
+            if key == arcade.key.UP:
+                self.atv.acc_y = DELTA_SPEED
+            elif key == arcade.key.DOWN:
+                self.atv.acc_y = - DELTA_SPEED
+            elif key == arcade.key.LEFT:
+                self.atv.acc_x = - DELTA_SPEED
+            elif key == arcade.key.RIGHT:
+                self.atv.acc_x = DELTA_SPEED
+            elif key == arcade.key.F:
+                self.set_fullscreen(not self.fullscreen)
+        else :
+            pass
