@@ -10,7 +10,7 @@
 
 #Variables d'environnement
 motDePasse="4594"
-adrIPSrv="192.168.1.109"
+adrIPSrv="192.168.188.2"
 portSrv="9999"
 
 
