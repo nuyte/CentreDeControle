@@ -9,7 +9,7 @@
 ###############################################################################
 
 #Variables d'environnement
-motDePasse="4594"
+motDePasse="ciel"
 adrIPSrv="192.168.188.2"
 portSrv="9999"
 
