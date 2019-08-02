@@ -9,8 +9,8 @@
 ###############################################################################
 
 #Variables d'environnement
-motDePasse="4954"
-adrIPSrv="192.168.1.21"
+motDePasse="4594"
+adrIPSrv="192.168.1.109"
 portSrv="9999"
 
 
