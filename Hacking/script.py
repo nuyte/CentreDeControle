@@ -180,8 +180,8 @@ def logAsAdmin(goodUsername, goodPassword,indices):
 
             print(colored(line1,'red'))
             slowprint(line2.format(
-                dateInterval[0].strftime("%Y-%m-%d %H:%M"),\
-                dateInterval[1].strftime("%Y-%m-%d %H:%M")),'white',attrs=['bold'])
+                dateInterval[0].strftime("%d-%m-%Y %H:%M"),\
+                dateInterval[1].strftime("%d-%m-%Y %H:%M")),'white',attrs=['bold'])
             slowprint(line3,'red')
             res = input()
             res = format_string(res)
@@ -808,7 +808,14 @@ if args.section == 0 or args.section == 3 :
     searchForBadFile(culprit)
 
 
-    
+
+# diplay psswd to unlock other computers after hacking is solved
+message = "\nPour re-initialiser les autres PCs piratés, le mot de passe "+\
+          "est le numero NGC de la galaxie du Sombrero."
+slowprint(message,color='green' )
+
+
+
 res = input()
 while format_string(res) != format_string('quit script') :
     res = input()
